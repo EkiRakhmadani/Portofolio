@@ -1,32 +1,19 @@
-import React, { useState } from "react";
-import { Container } from "react-bootstrap";
+import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./_app.css";
 
-import Header from "./Components/Header/Header";
-import Sidebar from "./Components/Sidebar/Sidebar";
-import HomeScreen from "./Screen/HomeScreen/HomeScreen";
+import Layout from "./Layout";
 import LoginScreen from "./Screen/LoginScreen/LoginScreen";
+import Searching from "./Searching";
 
 const App = () => {
-  return <LoginScreen />;
-};
-
-const Layout = ({ children }) => {
-  const [sidebar, toggleSidebar] = useState(false);
-  const handleToggleSidebar = () => toggleSidebar((value) => !value);
-
   return (
-    <>
-      <Header handleToggleSidebar={handleToggleSidebar} />
-
-      <div className="app_container" border border-info>
-        <Sidebar sidebar={sidebar} handleToggleSidebar={handleToggleSidebar} />
-        <Container fluid className="app_main" border border-warning>
-          {children}
-        </Container>
-      </div>
-    </>
+    <Routes>
+      <Route path="/" element={<Layout />} />
+      <Route path="auth" element={<LoginScreen />} />
+      <Route path="auth" element={<LoginScreen />} />
+      <Route path="search" element={<Searching />} />
+    </Routes>
   );
 };
 
