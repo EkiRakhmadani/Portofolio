@@ -3,7 +3,7 @@ import "./_searching.css";
 
 const Searching = () => {
   return (
-    <div className="Searching">
+    <div className="searching">
       <h1>Searching...</h1>
     </div>
   );
