@@ -1,9 +1,15 @@
 import "./App.css";
+import Header from "./components/Header/header";
+import Home from "./components/home/Home";
 
 function App() {
   return (
     <>
-      <h1>tes</h1>
+      <Header />
+
+      <main className="main">
+        <Home />
+      </main>
     </>
   );
 }
