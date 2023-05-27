@@ -1,3 +1,7 @@
+.home_container {
+  row-gap: 7rem;
+}
+
 .home_content {
   grid-template-columns: 116px repeat(2, 1fr);
   padding-top: 5.5rem;
@@ -79,4 +83,33 @@
 .home_description {
   max-width: 400px;
   margin-bottom: var(--mb-3);
+}
+
+.home_scroll {
+  margin-left: 9.25rem;
+}
+
+.wheel {
+  animation: animation_scroll 2s ease infinite;
+}
+
+@keyframes animation_scroll {
+  0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(3.75rem);
+  }
+}
+
+.home_scroll-name {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  margin-right: var(--mb-0-25);
+  margin-left: 2px;
+}
+
+.home_scroll-arrow {
+  font-size: 1.25rem;
 }
