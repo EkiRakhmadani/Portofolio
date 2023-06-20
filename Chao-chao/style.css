@@ -9,10 +9,10 @@
   opacity: 0;
   visibility: hidden;
   transition: 0.3s;
-}f
+}
 
 * {
-  margin: 0;d
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }

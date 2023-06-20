@@ -16,7 +16,7 @@ const Data = () => {
       </p>
       <a href="#contact" className="button button--flex">
         Reach Me!
-        <img src={sendLogo} alt="" />
+        <img src={sendLogo} alt="" className="button_icon" />
       </a>
     </div>
   );
