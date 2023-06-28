@@ -14,6 +14,7 @@ const Qualification = () => {
 
       <div className="qualification_container container">
         <div className="qualification_tabs">
+          {/* Button Experience */}
           <div
             className={
               toggle === 1
@@ -26,6 +27,7 @@ const Qualification = () => {
             Experience
           </div>
 
+          {/* Button Education */}
           <div
             className={
               toggle === 2
@@ -34,7 +36,7 @@ const Qualification = () => {
             }
             onClick={() => toggleTab(2)}
           >
-            <i className="uil uil-briefcase-alt qualification_icon"></i>{" "}
+            <i className="uil uil-graduation-cap qualification_icon"></i>{" "}
             Education
           </div>
         </div>
@@ -55,7 +57,7 @@ const Qualification = () => {
                   PT Internusa Jayaabadi Sentosa
                 </span>
                 <div className="qualification_calendar">
-                  <i className="uil uil-calendar-alt"></i> 2022 - Present
+                  <i className="uil uil-calendar-alt"></i> 2021 - Present
                 </div>
               </div>
               <div>
@@ -64,7 +66,7 @@ const Qualification = () => {
               </div>
             </div>
 
-            {/* FSI */}
+            {/* OTC */}
             <div className="qualification_data">
               <div></div>
               <div>
@@ -72,13 +74,31 @@ const Qualification = () => {
                 <span className="qualification_line"></span>
               </div>
               <div>
+                <h3 className="qualification_title">Website Project</h3>
+                <span className="qualification_subtitle">
+                  Onetwocode Indonesia
+                </span>
+                <div className="qualification_calendar">
+                  <i className="uil uil-calendar-alt"></i> 2022
+                </div>
+              </div>
+            </div>
+
+            {/* FSI */}
+            <div className="qualification_data">
+              <div>
                 <h3 className="qualification_title">Junior Programmer</h3>
                 <span className="qualification_subtitle">
                   PT Field Survey Indonesia
                 </span>
                 <div className="qualification_calendar">
-                  <i className="uil uil-calendar-alt"></i> 2019 - 2021
+                  <i className="uil uil-calendar-alt"></i> 2019 - 2020
                 </div>
+              </div>
+
+              <div>
+                <span className="qualification_rounder"></span>
+                <span className="qualification_line"></span>
               </div>
             </div>
           </div>
@@ -94,7 +114,7 @@ const Qualification = () => {
             <div className="qualification_data">
               <div>
                 <h3 className="qualification_title">
-                  Web Development / React & ReactJs Development
+                  ReactJs & React Native Development
                 </h3>
                 <span className="qualification_subtitle">
                   Hacktiv8 Indonesia

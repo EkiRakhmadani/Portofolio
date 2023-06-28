@@ -7,7 +7,7 @@ import Info from "./Info";
 
 const About = () => {
   return (
-    <section className="about section" id="section">
+    <section className="about section" id="about">
       <h2 className="section_title">About Me</h2>
       <span className="section_subtitle">My Introduction</span>
 

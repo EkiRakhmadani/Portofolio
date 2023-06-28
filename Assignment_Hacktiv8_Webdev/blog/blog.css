@@ -181,3 +181,24 @@ main h2, main p {
 .number ul:last-child {
   margin-right: 2rem;
 }
+
+@media only screen and (max-width: 400px){
+    .wrapper {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .pic {
+        padding: unset;
+        margin: unset;
+        justify-content: center;
+    }
+
+    .kanan {
+        gap: unset;
+    }
+
+    .number ul {
+        gap: .5rem;
+    }
+}

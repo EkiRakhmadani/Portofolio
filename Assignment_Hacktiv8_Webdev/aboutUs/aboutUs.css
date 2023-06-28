@@ -31,7 +31,6 @@ main {
 .paragraph {
   display: flex;
   width: 100%;
-  height: 100px;
   text-align: justify;
   gap: 1.5rem;
 }
@@ -135,3 +134,14 @@ h2 {
 }
 
 /* ======TEAMS======= */
+
+@media only screen and (max-width: 750px) {
+  .intro {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .skill {
+    padding-top: 8rem !important;
+  }
+}
